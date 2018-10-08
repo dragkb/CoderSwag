@@ -2,23 +2,23 @@ package com.alex.coderswag.Controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import com.alex.coderswag.Model.Category
+import com.alex.coderswag.Adapter.CategoryAdapter
 import com.alex.coderswag.R
 import com.alex.coderswag.Services.DataService
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var adapter : ArrayAdapter<Category>
+    // adapter is a middle man between data and listViews
+    lateinit var adapter : CategoryAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        adapter = ArrayAdapter(this,
-                android.R.layout.simple_list_item_1,
-                DataService.categories)
+        // Initialize an Adapter
+        adapter = CategoryAdapter(this, DataService.categories)
+        // Set the adapter for the ListView itself
         categoryListView.adapter = adapter
     }
 }
