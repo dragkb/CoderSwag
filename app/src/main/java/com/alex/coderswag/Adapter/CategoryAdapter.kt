@@ -18,7 +18,6 @@ class CategoryAdapter (context: Context, categories: List<Category>) : BaseAdapt
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
 
         val categoryView : View
-
         // Create and instance of our private class ViewHolder
         val holder: ViewHolder
 
