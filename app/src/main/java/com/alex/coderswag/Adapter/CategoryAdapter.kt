@@ -28,10 +28,10 @@ class CategoryAdapter (context: Context, categories: List<Category>) : BaseAdapt
             holder = ViewHolder()
             holder.categoryImage = categoryView.findViewById(R.id.categoryImage)
             holder.categoryName = categoryView.findViewById(R.id.categoryName)
-            // tag is set unique value to categoryView which is holder
+            // tag is set unique value to categoryView which is Holder
             categoryView.tag = holder
         } else {
-            // Reusing cells of our holder views
+            // Reusing cells of our Holder views
             holder = convertView.tag as ViewHolder
             categoryView = convertView
         }
