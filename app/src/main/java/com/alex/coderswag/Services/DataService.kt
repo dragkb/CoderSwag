@@ -25,6 +25,15 @@ object DataService {
             Product("Devslopes Badge Light Grey", "$20", "shirt2"),
             Product("Devslopes Logo Shirt Red", "22", "shirt3"),
             Product("Devslopes Hustle", "$22", "shirt4"),
+            Product("Kickflip Studios", "$18", "shirt5"),
+            Product("Devslopes Shirt Balck", "$18", "shirt1"),
+            Product("Devslopes Badge Light Grey", "$20", "shirt2"),
+            Product("Devslopes Logo Shirt Red", "22", "shirt3"),
+            Product("Devslopes Hustle", "$22", "shirt4"),
+            Product("Kickflip Studios", "$18", "shirt5"),Product("Devslopes Shirt Balck", "$18", "shirt1"),
+            Product("Devslopes Badge Light Grey", "$20", "shirt2"),
+            Product("Devslopes Logo Shirt Red", "22", "shirt3"),
+            Product("Devslopes Hustle", "$22", "shirt4"),
             Product("Kickflip Studios", "$18", "shirt5")
     )
 
@@ -32,11 +41,25 @@ object DataService {
             Product("Devslopes Hoodie Grey", "$28", "hoodie1"),
             Product("Devslopes Hoodie Red", "$32", "hoodie2"),
             Product("Devslopes Grey Hoodie", "$28", "hoodie3"),
+            Product("Devslopes Black Hoodie", "$32", "hoodie4"),
+            Product("Devslopes Hoodie Grey", "$28", "hoodie1"),
+            Product("Devslopes Hoodie Red", "$32", "hoodie2"),
+            Product("Devslopes Grey Hoodie", "$28", "hoodie3"),
+            Product("Devslopes Black Hoodie", "$32", "hoodie4"),
+            Product("Devslopes Hoodie Red", "$32", "hoodie2"),
+            Product("Devslopes Grey Hoodie", "$28", "hoodie3"),
             Product("Devslopes Black Hoodie", "$32", "hoodie4")
     )
 
     val hats = listOf(
             Product("Devslopes Graphic Beanie", "$18", "hat1"),
+            Product("Devslopes Hat Black", "$20", "hat2"),
+            Product("Devslopes Hat White", "$18", "hat3"),
+            Product("Devslopes Hat Snapback", "$22", "hat4"),
+            Product("Devslopes Graphic Beanie", "$18", "hat1"),
+            Product("Devslopes Hat Black", "$20", "hat2"),
+            Product("Devslopes Hat White", "$18", "hat3"),
+            Product("Devslopes Hat Snapback", "$22", "hat4"),Product("Devslopes Graphic Beanie", "$18", "hat1"),
             Product("Devslopes Hat Black", "$20", "hat2"),
             Product("Devslopes Hat White", "$18", "hat3"),
             Product("Devslopes Hat Snapback", "$22", "hat4")
@@ -48,8 +71,8 @@ object DataService {
 
         return when(category){
             "SHIRTS" -> shirts
-            "HOODIES" -> hoodies
-            "HATS" -> hats
+            "HOODIE" -> hoodies
+            "HAT" -> hats
             else -> digitalGood
         }
     }
